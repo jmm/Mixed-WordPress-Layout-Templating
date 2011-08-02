@@ -1,0 +1,25 @@
+
+
+
+#SITE-secondary-content .widgets {
+
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+#SITE-secondary-content .widget-container {
+
+  margin: 0 0 1em;
+
+  padding: 0 0 1em;
+
+  border: 1px #444444;
+
+  border-style: none none solid;
+
+}

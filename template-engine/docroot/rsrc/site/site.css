@@ -1,0 +1,119 @@
+
+
+@import "content.css";
+
+
+body {
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+#SITE-primary-layout {
+
+  width: 960px;
+
+  margin: 0 auto;
+
+}
+
+
+#SITE-header,
+#SITE-footer {
+
+  background-color: #444444;
+
+  color: #FFFFFF;
+
+}
+
+
+#SITE-header,
+#SITE-footer,
+#SITE-primary-content {
+
+  padding: 0.5em;
+
+}
+
+
+#SITE-footer {
+
+  text-align: center;
+
+}
+
+
+#SITE-primary-nav .SITE-nav-items {
+
+  list-style-type: none;
+
+  margin: 0;
+
+  padding: 0;
+
+}
+
+
+#SITE-primary-nav .SITE-nav-items .SITE-nav-item {
+
+  display: inline;
+
+  margin: 0 0.5em 0 0;
+
+}
+
+
+#SITE-primary-nav .SITE-nav-items .SITE-nav-item a[href] {
+
+  color: #FFFFFF;
+
+}
+
+
+#SITE-primary-nav .SITE-nav-items .SITE-nav-item.SITE-current a[href] {
+
+  color: #99CCFF;
+
+}
+
+
+#SITE-greater-primary-content:after {
+
+  content: ".";
+
+  font-size: 0;
+
+  display: block;
+
+  height: 0;
+
+  clear: both;
+
+  overflow: hidden;
+
+}
+
+
+#SITE-greater-primary-content.SITE-with-secondary-content #SITE-primary-content {
+
+  width: 558px;
+
+  float: left;
+
+  margin-right: 16px;
+
+}
+
+
+#SITE-secondary-content {
+
+  float: left;
+
+  width: 370px;
+
+}
+

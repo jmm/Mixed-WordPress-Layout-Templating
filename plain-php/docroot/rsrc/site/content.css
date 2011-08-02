@@ -1,0 +1,28 @@
+
+
+section, article, aside, hgroup, header, footer, nav, figure, figcaption {
+
+  display: block;
+
+}
+
+
+body {
+
+  background-color: #FFFFFF;
+
+  color: #000000;
+
+  font-family: "Georgia", serif;
+
+  font-size: 1em;
+
+}
+
+
+img {
+
+  border-style: none;
+
+}
+
