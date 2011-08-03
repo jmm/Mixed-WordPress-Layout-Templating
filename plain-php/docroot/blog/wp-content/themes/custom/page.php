@@ -7,6 +7,7 @@ $content[ 'primary-content-heading' ] = $content[ 'title' ];
 
 ob_start();
 
+
 while ( have_posts() ) {
 
   the_post();

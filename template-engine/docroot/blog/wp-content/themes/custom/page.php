@@ -7,6 +7,7 @@ $view->set_content_item( 'primary-content-heading', $content[ 'title' ] );
 
 $view->start_set_content_item( 'primary' );
 
+
 while ( have_posts() ) {
 
   the_post();
