@@ -18,7 +18,9 @@ $content = array(
 
   'primary-stylesheet' => "/rsrc/site/site.css",
 
-  'body-classes' => array()
+  'body-classes' => array(),
+
+  'site-title' => "WordPress Layout Templating"
 
 );
 // array

@@ -17,11 +17,9 @@ $view->set_content_item( 'lang', get_bloginfo( 'language' ) );
 
 $view->set_content_item( 'text-dir', get_bloginfo( 'text-direction' ) );
 
-$view->set_content_item( 'title', (
+$view->set_content_item( 'site-title', get_bloginfo( 'name' ) );
 
-  get_bloginfo( 'name' ) . " &raquo; " . $view->get_content_item( 'title' )
-
-) );
+$view->set_content_item( 'title', wp_title( '', FALSE ) );
 
 
 $view->set_content_item( 'primary-stylesheet', ( get_stylesheet_directory_uri() . "/style.css" ) );

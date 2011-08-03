@@ -9,7 +9,9 @@ $content[ 'lang' ] = get_bloginfo( 'language' );
 
 $content[ 'text-dir' ] = get_bloginfo( 'text-direction' );
 
-$content[ 'title' ] = get_bloginfo( 'name' ) . " &raquo; " . $content[ 'title' ];
+$content[ 'site-title' ] = get_bloginfo( 'name' );
+
+$content[ 'title' ] = wp_title( '', FALSE );
 
 
 $content[ 'primary-stylesheet' ] = get_stylesheet_directory_uri() . "/style.css";

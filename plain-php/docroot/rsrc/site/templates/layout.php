@@ -4,9 +4,9 @@
 
 <head>
 
-<meta http-equiv="Content-Type: text/html; charset=<?php echo $content[ 'charset' ]; ?>" />
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $content[ 'charset' ]; ?>" />
 
-<title><?php echo $content[ 'title' ]; ?></title>
+<title><?php echo $content[ 'site-title' ] . ( strlen( $content[ 'title' ] ) ? " | {$content[ 'title' ]}" : "" ); ?></title>
 
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo $content[ 'primary-stylesheet' ]; ?>" />
 
@@ -35,7 +35,7 @@ Layout Templating Demo
 
 $nav_items = array(
 
-  'about' => array( 'label' => "About", 'url' => "/" ),
+  'home' => array( 'label' => "Home", 'url' => "/" ),
 
   'sample-page' => array( 'label' => "Sample Page", 'url' => "/sample-page/" ),
 
@@ -83,10 +83,23 @@ $gp_content_class = strlen( $content[ 'secondary' ] ) ? "with" : "without";
 
 <section id="SITE-greater-primary-content" class="SITE-<?php echo $gp_content_class; ?>-secondary-content">
 
+<?php
+
+if ( strlen( $content[ 'primary-content-heading' ] ) ) {
+
+?>
+
 <h1 id="SITE-primary-content-heading">
 <?php echo $content[ 'primary-content-heading' ]; ?>
 
 </h1>
+
+<?php
+
+}
+// if
+
+?>
 
 
 <div id="SITE-primary-content">

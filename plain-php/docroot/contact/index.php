@@ -9,6 +9,17 @@ $config[ 'site-section' ] = 'contact';
 $content[ 'title' ] = "Contact Us";
 
 
+ob_start();
+
+?>
+
+<link rel="stylesheet" type="text/css" media="all" href="rsrc/contact.css" />
+
+<?php
+
+$content[ 'head' ] = ob_get_clean();
+
+
 $content[ 'primary-content-heading' ] = $content[ 'title' ];
 
 
@@ -18,18 +29,6 @@ ob_start();
 
 <p>
 This is the Contact page primary content.
-</p>
-
-<p>
-The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.
-</p>
-
-<p>
-The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.
-</p>
-
-<p>
-The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.  The quick brown fox jumps over the lazy dog.
 </p>
 
 <p>
@@ -49,10 +48,6 @@ ob_start();
 This is the Contact page secondary (sidebar) content.
 </p>
 
-
-<p>
-Blah blah blah, blah blah.  Blah blah blah, blah blah.Blah blah blah, blah blah.Blah blah blah, blah blah.Blah blah blah, blah blah.
-</p>
 
 <p>
 Blah blah blah, blah blah.  Blah blah blah, blah blah.Blah blah blah, blah blah.Blah blah blah, blah blah.Blah blah blah, blah blah.

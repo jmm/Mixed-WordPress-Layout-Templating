@@ -4,9 +4,9 @@
 
 <head>
 
-<meta http-equiv="Content-Type: text/html; charset=<?php echo $view->get_content_item( 'charset' ); ?>" />
+<meta http-equiv="Content-Type" content="text/html; charset=<?php echo $view->get_content_item( 'charset' ); ?>" />
 
-<title><?php echo $view->get_content_item( 'title' ); ?></title>
+<title><?php echo $view->get_content_item( 'site-title' ) . ( strlen( $title = $view->get_content_item( 'title' ) ) ? " | {$title}" : "" ); ?></title>
 
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo $view->get_content_item( 'primary-stylesheet' ); ?>" />
 
@@ -35,7 +35,7 @@ Layout Templating Demo
 
 $nav_items = array(
 
-  'about' => array( 'label' => "About", 'url' => "/" ),
+  'home' => array( 'label' => "Home", 'url' => "/" ),
 
   'sample-page' => array( 'label' => "Sample Page", 'url' => "/sample-page/" ),
 
@@ -83,10 +83,23 @@ $gp_content_class = strlen( $view->get_content_item( 'secondary' ) ) ? "with" : 
 
 <section id="SITE-greater-primary-content" class="SITE-<?php echo $gp_content_class; ?>-secondary-content">
 
+<?php
+
+if ( strlen( $view->get_content_item( 'primary-content-heading' ) ) ) {
+
+?>
+
 <h1 id="SITE-primary-content-heading">
 <?php echo $view->get_content_item( 'primary-content-heading' ); ?>
 
 </h1>
+
+<?php
+
+}
+// if
+
+?>
 
 
 <div id="SITE-primary-content">

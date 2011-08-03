@@ -3,24 +3,18 @@
 require_once "{$_SERVER[ 'DOCUMENT_ROOT' ]}/init.php";
 
 
-$config[ 'site-section' ] = 'about';
-
-
-$content[ 'title' ] = "About Us";
+$config[ 'site-section' ] = 'home';
 
 
 ob_start();
 
 ?>
 
-<link rel="stylesheet" type="text/css" href="/inside/about/about.css" media="all" />
+<link rel="stylesheet" type="text/css" href="rsrc/home.css" media="all" />
 
 <?php
 
 $content[ 'head' ] = ob_get_clean();
-
-
-$content[ 'primary-content-heading' ] = $content[ 'title' ];
 
 
 ob_start();
@@ -28,7 +22,7 @@ ob_start();
 ?>
 
 <p>
-This is the About (home) page primary content.
+This is the Home page primary content.
 </p>
 
 <p>
