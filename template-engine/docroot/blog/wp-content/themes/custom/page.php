@@ -2,7 +2,7 @@
 
 $view->set_content_item( 'title', the_title( '', '', FALSE ) );
 
-$view->set_content_item( 'primary-content-heading', $content[ 'title' ] );
+$view->set_content_item( 'primary-content-heading', $view->get_content_item( 'title' ) );
 
 
 $view->start_set_content_item( 'primary' );
